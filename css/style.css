@@ -1,5 +1,6 @@
 :root{
-    --buttons: yellow;
+    --buttons: #f1c40f;
+    --backgrounds: #ddd;
 }
 
 
@@ -22,7 +23,7 @@ section{
 }
 
 .product > .level {
-    background-color: #ddd;
+    background-color: var(--backgrounds);
     color: black;
     padding: 15px 0;
     width: 100%;
@@ -41,7 +42,7 @@ ol{
 .product > button {
     border: 0;
     margin: 15px 0;
-    background-color: #f1c40f;
+    background-color: var(--buttons);
     font-weight: 400;
 }
 
@@ -56,4 +57,63 @@ ol{
     height: 40px;
     background: transparent;
 
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+    margin-top: 50px;
+}
+
+#hero > h2 {
+    margin-bottom: 20px;
+    word-wrap: break-word;
+    font-size: 1.5em;
+}
+
+input[type="email" i] {
+    padding: 2%;
+    width: 80%;
+}
+
+#hero input[type='submit'] {
+    max-width: 150px;
+    width: 100%;
+    height: 30px;
+    margin: 15px 0;
+    border: 0;
+    background-color: var(--buttons);
+    text-decoration: none;
+}
+
+footer {
+    margin-top: 30px;
+    background-color:var(--backgrounds);
+    padding: 20px;
+    font-family: 'Lato', sans-serif;
+    text-align: right;
+
+}
+
+footer > ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}   
+
+footer > ul > li {
+    padding: 0 10px;
+    
+}
+
+footer > span {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+    color: #444;
 }
