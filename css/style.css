@@ -1,0 +1,59 @@
+:root{
+    --buttons: yellow;
+}
+
+
+section{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+}
+
+
+.product{
+    width: 200px;
+    margin: 10;
+    border: 1px solid;
+    margin-right: 10px;
+    text-align: center;
+    
+}
+
+.product > .level {
+    background-color: #ddd;
+    color: black;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+li{
+    list-style: none;
+}
+
+ol{
+    padding: 0;
+}
+
+.product > button {
+    border: 0;
+    margin: 15px 0;
+    background-color: #f1c40f;
+    font-weight: 400;
+}
+
+.btn {
+    padding: 0 20px;
+    border-radius: 2px;
+    background-color: var(--buttons);
+    width: 50%;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 1em;
+    height: 40px;
+    background: transparent;
+
+}
